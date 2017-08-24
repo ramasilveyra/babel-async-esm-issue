@@ -1,0 +1,16 @@
+{
+  "name": "babel-async-esm-issue",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "build": "babel src -d build",
+    "build:watch": "yarn run build -- --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  }
+}
